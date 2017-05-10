@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>
+	Hi, Mobike!
+</title>
+<meta name="description" content="mobike" /><meta name="keywords" content="mobike" /><link type="text/css" href="App_Themes/Default/CSS/clnew.css" rel="stylesheet" media="all" />
+    <script src="qrcode.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function show(lab) {
+            var id = document.getElementById('js_qr_id').value;
+			var url = "http://www.mobike.com/download/app.html?b=" + id + "_1";
+			new QRCode(document.getElementById("qrcode"), {
+				text : url,
+				width : 150,
+				height : 150
+			});
+        }
+
+    </script>
+</head>
+<body>
+<div>
+	<h2 class="title-divider">
+		输入编号</h2>
+	<div>	
+		<input id="js_qr_id" reg="js_qr_id" class="js_qr_data" type="text" />
+		<input name="Submit" type="button" id="IDSubmit" value="提交" onClick="show()" />
+  		</form>
+  	</div>
+	<div>&nbsp;</div>
+</div>
+<div id="qrcode" style="width:150px; height:150px; margin-top:1%;margin-left:1%;"></div>
+<div>
+  <p>&nbsp;</p>
+</div>
+	<div id="footer-bottom">
+        <div class="bottom-wrapper">
+            <div id="bottom-left">
+                &copy; 2017 <a href="#">I like mobike </a>
+                <a href="http://blog.csdn.net" target="_blank">粤ICP备xxxxxxxx号</a>
+            </div>
+            <div id="bottom-right">
+            </div>
+        </div>
+   	</div>
+    </form>
+</body>
+</html>
